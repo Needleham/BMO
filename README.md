@@ -58,38 +58,25 @@ python3 main.py
 ---
 Slash Commands
 
-┌─────────┬──────────────────────────────────────────────┐
-│ Command │                 Description                  │
-├─────────┼──────────────────────────────────────────────┤
-│ /help   │ Show available commands                      │
-├─────────┼──────────────────────────────────────────────┤
-│ /clear  │ Clear conversation history                   │
-├─────────┼──────────────────────────────────────────────┤
-│ /model  │ Show current model and reasoning mode status │
-├─────────┼──────────────────────────────────────────────┤
-│ /reason │ Toggle reasoning model (deepseek-r1:14b)     │
-├─────────┼──────────────────────────────────────────────┤
-│ /exit   │ Say goodbye to BMO                           │
-└─────────┴──────────────────────────────────────────────┘
+Command:
+
+| /help   │ Show available commands                    
+│ /clear  │ Clear conversation history                
+│ /model  │ Show current model and reasoning mode status
+│ /reason │ Toggle reasoning model (deepseek-r1:14b)    
+│ /exit   │ Say goodbye to BMO                           
 
 ---
 Configuration
 
-┌─────────────────────┬───────────────────────────────────────────────┐
-│         Key         │                  Description                  │
-├─────────────────────┼───────────────────────────────────────────────┤
-│ model.primary       │ Main model for most tasks                     │
-├─────────────────────┼───────────────────────────────────────────────┤
-│ model.reasoning     │ Model used when /reason is active             │
-├─────────────────────┼───────────────────────────────────────────────┤
-│ ollama.host         │ Ollama API address (default: localhost:11434) │
-├─────────────────────┼───────────────────────────────────────────────┤
-│ rag.vault_path      │ Path to your Obsidian vault                   │
-├─────────────────────┼───────────────────────────────────────────────┤
-│ rag.enabled         │ Enable/disable vault search                   │
-├─────────────────────┼───────────────────────────────────────────────┤
-│ options.temperature │ Response creativity (0 = focused, 1.6 = wild) │
-└─────────────────────┴───────────────────────────────────────────────┘
+
+Key                   |       Description                  
+│ model.primary       │ Main model for most tasks                    
+│ model.reasoning     │ Model used when /reason is active            
+│ ollama.host         │ Ollama API address (default: localhost:11434)
+│ rag.vault_path      │ Path to your Obsidian vault                  
+│ rag.enabled         │ Enable/disable vault search                   
+│ options.temperature │ Response creativity (0 = focused, 1.6 = wild) 
 
 ---
 Roadmap

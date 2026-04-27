@@ -27,6 +27,7 @@ def main():
         #Re-ingest vault in background - vault is git synced so changes frequently
         def _background_ingest():
             rag_store.ingest()
+            rag_store.ingest_memory()
         thread = threading.Thread(target=_background_ingest, daemon=True)
         thread.start()
     agent = BMOAgent(config, rag_store=rag_store)
